@@ -1,0 +1,253 @@
+/*CSS Reset / Normalize*/
+/* Hemos disponibilizado el básico de reset de estilos. Si quieren, añadan más informaciones 
+en las secciones señaladas */
+/*Já deixaremos o básico de reset de estilos. Caso queira adicionar mais informações
+coloque nas sessões indicadas*/
+
+:root{
+    /* Inserta la variable de los otros colores inspeccionando el exemplo de figma */
+    /*Se esforce para trabalhar com variáveis, é uma dica profissional valiosa*/
+   --cor-de-fundo: #F5F5F5;
+   --cor-de-link: #000;
+}
+
+body {
+    box-sizing: border-box;
+    background-color: var(--cor-de-fundo) ;
+    font-family: 'Raleway';
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+}
+ol, ul,li {
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: var(--cor-de-link);
+}
+
+/*En este desafío nosostros gustaríamos que ustedes intentaran utilizar la metodología BEM. 
+
+Lo que es el BEM?
+
+BEM (Bloque, Elemento, Modificador) es un enfoque basado en componentes para el 
+desarrollo web. La idea detrás de esto es dividir la interfaz de usuario en bloques
+independientes. Esto hace que el desarrollo de la interfaz sea fácil y rápido, incluso
+con una interfaz de usuario compleja, y permite la reutilización del código existente sin copiar y pegar.
+
+Enlace de la documentación oficial!
+https://en.bem.info/methodology/quick-start/*/
+
+/*Sección Menu*/
+
+.menu__header{
+    display: flex;
+    align-items: center;
+   
+}
+.menu{
+    display: flex;
+    justify-content: space-between;   
+    margin: 0 auto;
+    margin-top: 20px;
+    background-color: rgb(233, 245, 241);
+     width: 90%;
+}
+
+.menu__list{
+    font-size: small;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.menu__list__item, .menu__list__item1{
+    padding: 5px;
+    align-items: center;
+    font-weight: 300;
+    font-style: italic;
+    
+}
+
+.title__container{
+margin: 0 auto;
+
+}
+
+.title__network{
+    display: flex;
+   justify-content: space-around; 
+   margin-top: 30px;
+    
+}
+.title__network__item a{
+    background-color: #000;
+    width: 100px;
+    padding: 10px;
+    color: #F5F5F5;
+   font-weight: 300;
+   font-style: italic;
+    
+}
+
+.title__profile{
+    width: 200px;
+    height: 250px;
+    border-radius: 100px;
+    margin-right: 100px;
+    margin-top: 75px;
+}
+
+/*Sección Title*/
+
+.title__div{
+ display: flex;
+ justify-content: space-between;
+ width: 90%;
+ align-items: center;
+ margin: 0 auto;
+
+}
+.title__bio{
+    font-size: large;
+    font-weight: 300;
+    font-style: italic;
+    text-align: center;
+}
+
+/* footer*/
+
+.footer{
+    width: 90%;
+    margin: 0 auto ;
+    margin-top: 20px;
+}
+
+.footer__rodape{
+    text-align: right;
+    font-size: larger;
+
+    font-weight: 700;
+    font-style: italic;
+}
+
+#error{
+    color: red;
+    font-size: 15px;
+}
+
+.experience__botao--demo{
+    background-color: red;
+    width: 125px;
+    color:#F5F5F5;
+    border-radius: 5px;
+    padding: 5px;
+    text-align: center;
+}
+
+.experiencia__botao--repo{
+    background-color: green;
+    color: white;
+    width: 125px;
+    text-align: center;
+    padding: 5px;
+    border-radius: 5px
+}
+
+.formcontato__botao{
+    background-color: blue;
+    color: antiquewhite;
+    border-radius: 10px;
+    width: 200px;
+    padding: 5px;
+
+}
+
+
+
+/* Vamos a desafiarnos trabajando con responsividad?
+Utiliza las referencias de los breakpoints @media abajo */
+
+
+/*Tablet*/
+@media (max-width: 768px) {
+
+/* Menú */
+
+.title__div{
+    flex-direction: column;
+     width: 100%;
+    }
+    .title__profile{
+     margin-top: 0;
+     margin: 0 auto;
+    }
+
+.menu__list__item{
+    display: none;
+}
+
+.title__network__item{
+   margin: 0 auto;
+   width: 125px;
+}
+
+
+.footer{
+    width: 100%;
+    margin: 0 auto ;
+    margin-top: 20px;
+}
+
+.footer__rodape{
+    text-align: center;
+    font-size: 15px;
+}
+
+
+}
+
+/*Mobile*/
+@media (max-width: 500px) {
+
+    .title__div{
+       flex-direction: column;
+        width: 100%;
+       }
+       .title__profile{
+        margin-top: 0;
+        margin: 0 auto;
+       }
+
+       .title__bio{
+    font-size: 17px;
+    text-align: left;
+       }
+       .title__subsection{
+        font-size: 12px;
+        text-align: left
+       }
+
+       .title__network{
+        margin: 0 auto;        
+       }
+
+       .title__network__item {
+        width: 100px;
+        font-size: 10px;
+
+       }
+
+       .title__network__item a{
+        background-color: #F5F5F5;
+        color: #000;
+        font-size: 10 px;
+        
+        
+       }
+
+      
+
+       
+
+}

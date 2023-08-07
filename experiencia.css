@@ -1,0 +1,55 @@
+.experience{
+    width: 90;
+    margin-top: 30px;
+}
+
+.experience__section__title{
+    font-size: larger;
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+
+}
+
+.experiencie__box{
+    display: flex;
+    justify-content:space-around;
+    margin-top: 50px;
+
+}
+
+.experience__box{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+
+}
+
+.experience__img{
+    width: 300px;
+    height: 300px;
+    align-items: center;
+}
+
+@media (max-width: 768px){
+    .experiencie__box{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experience__box{
+       flex-direction: column;
+       align-items: center;
+    }
+}
+
+@media (max-width: 500px){
+    .experience__repo{
+        margin-left: 30px;
+
+    }
+
+    .experience__repo1{
+        margin-left: 60px;
+    }
+}

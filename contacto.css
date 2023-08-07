@@ -1,0 +1,53 @@
+.formcontato{
+    width: 90%;
+    margin: 0 auto;
+    background-color: rgb(238, 248, 245);
+}
+
+.formcontato__title{
+    font-size: larger;
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.formcontato__contacto{
+    display: flex;
+    justify-content: space-between;
+}
+.formcontato__input, .formcontato__textarea, .formcontato__botao {
+    margin-top: 10px;
+}
+
+.formcontato__img{
+    width: 300px;
+    height: 300px;
+}
+
+.formcontato__subtext{
+    font-size: larger;
+    text-align: center;
+    font-weight: 700;
+    font-style: italic;
+}
+
+
+@media (max-width: 768px){
+    .formcontato__img{
+        display: none;
+        
+    }
+    .formcontato__input, .formcontato__textarea {
+        width: 100%;
+        margin: 5px;
+       
+    }
+    label{
+        margin: 5px;
+    }
+    #email{
+        border-bottom: 2px solid slateblue;
+    
+    }
+ 
+}
